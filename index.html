@@ -1,41 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Using CSS Grid</title>
 	<style>
-		body{
+		body {
 			color: #fff;
 			font-family: 'Nunito Semibold';
 			text-align: center;
 		}
-		#content{
+
+		#content {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			grid-gap: 10px;
 			max-width: 960px;
 			margin: 0 auto;
 		}
-		#content div{
+
+		#content div {
 			background: #3bbced;
 			padding: 30px;
 		}
-		#content div:nth-child(even){
+
+		#content div:nth-child(even) {
 			background: #777;
 			padding: 30px;
 		}
-		.nested{
+
+		.nested {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 10px;
 			/*grid-column: span 3;*/
 		}
-		.nested p{
+
+		.nested p {
 			border: 1px solid #fff;
 			padding: 20px;
 			margin: 0;
 		}
 	</style>
 </head>
+
 <body>
 
 	<div id="content">
@@ -57,4 +64,5 @@
 	</div>
 
 </body>
+
 </html>
